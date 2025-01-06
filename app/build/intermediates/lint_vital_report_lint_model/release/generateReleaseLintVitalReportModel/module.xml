@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/home/cyberspace/Harddisk/Shiva/project_work/p32/app"
+    name=":app"
+    type="APP"
+    maven="p32:app:unspecified"
+    agpVersion="8.5.0"
+    buildFolder="build"
+    bootClassPath="/home/cyberspace/Harddisk/Shiva/Android/android-sdk/platforms/android-34/android.jar:/home/cyberspace/Harddisk/Shiva/Android/android-sdk/build-tools/34.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>
