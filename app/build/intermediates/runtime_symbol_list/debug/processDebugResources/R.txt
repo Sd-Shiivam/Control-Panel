@@ -3843,6 +3843,8 @@ int mipmap ic_launcher 0x7f0d0000
 int mipmap ic_launcher_foreground 0x7f0d0001
 int mipmap ic_launcher_round 0x7f0d0002
 int plurals mtrl_badge_content_description 0x7f0e0000
+int string Message 0x7f0f00bb
+int string SendSmsTo 0x7f0f00bc
 int string Victim 0x7f0f0000
 int string abc_action_bar_home_description 0x7f0f0001
 int string abc_action_bar_up_description 0x7f0f0002
@@ -4026,6 +4028,7 @@ int string search_menu_title 0x7f0f00b3
 int string searchbar_scrolling_view_behavior 0x7f0f00b4
 int string searchview_clear_text_content_description 0x7f0f00b5
 int string searchview_navigation_content_description 0x7f0f00b6
+int string server_Url 0x7f0f00ba
 int string side_sheet_accessibility_pane_title 0x7f0f00b7
 int string side_sheet_behavior 0x7f0f00b8
 int string status_bar_notification_info_overflow 0x7f0f00b9

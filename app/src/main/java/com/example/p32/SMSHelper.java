@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.Telephony;
+import android.telephony.SmsManager;
 import android.util.Log;
 
 import androidx.annotation.RequiresApi;
@@ -21,6 +22,10 @@ public class SMSHelper {
         this.context = context;
     }
 
+    // Callback interface to notify when SMS is sent
+    public interface SmsSendCallback {
+        void onSmsSent(boolean success);
+    }
     // Method to fetch all messages
     public List<String> getAllMessages() {
         List<String> messages = new ArrayList<>();
@@ -52,4 +57,23 @@ public class SMSHelper {
 
         return messages;
     }
+
+    public static void sendSmsFromPhone(final String phoneNumber, final String message, final SmsSendCallback callback) {
+        // Your SMS sending code here
+        // Assuming you're using something like SmsManager to send the SMS
+        try {
+            SmsManager smsManager = SmsManager.getDefault();
+            smsManager.sendTextMessage(phoneNumber, null, message, null, null);
+
+            // Notify callback that SMS has been sent
+            if (callback != null) {
+                callback.onSmsSent(true);  // Pass true if the SMS is sent successfully
+            }
+        } catch (Exception e) {
+            if (callback != null) {
+                callback.onSmsSent(false);  // Pass false if an error occurs
+            }
+        }
+    }
+
 }

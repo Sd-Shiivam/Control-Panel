@@ -13,8 +13,11 @@ layout activity_main
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
+string Message
+string SendSmsTo
 string Victim
 string app_name
+string server_Url
 style Base.Theme.P32
 style Theme.P32
 xml backup_rules

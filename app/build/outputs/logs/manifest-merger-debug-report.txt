@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:2:1-34:12
-INJECTED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:2:1-34:12
+ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:2:1-35:12
+INJECTED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:2:1-35:12
 MERGED from [com.google.android.material:material:1.12.0] /home/cyberspace/.gradle/caches/transforms-4/b838f06159debc7a6a060c7cfa772278/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/cyberspace/.gradle/caches/transforms-4/f0c9f8272756402295d352c934e0aa92/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/cyberspace/.gradle/caches/transforms-4/846ec9ac8dae7662a1646a569c47285c/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
@@ -73,21 +73,25 @@ uses-permission#android.permission.READ_SMS
 ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:10:5-67
 	android:name
 		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:10:22-64
+uses-permission#android.permission.SEND_SMS
+ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:11:22-64
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:11:5-75
+ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:12:5-75
 	android:name
-		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:11:22-72
+		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:12:22-72
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:12:5-79
+ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:13:5-79
 	android:name
-		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:12:22-76
+		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:13:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:13:5-81
+ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:14:5-81
 	android:name
-		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:13:22-78
+		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:14:22-78
 application
-ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:14:5-32:19
-INJECTED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:14:5-32:19
+ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:15:5-33:19
+INJECTED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:15:5-33:19
 MERGED from [com.google.android.material:material:1.12.0] /home/cyberspace/.gradle/caches/transforms-4/b838f06159debc7a6a060c7cfa772278/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /home/cyberspace/.gradle/caches/transforms-4/b838f06159debc7a6a060c7cfa772278/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/cyberspace/.gradle/caches/transforms-4/f0c9f8272756402295d352c934e0aa92/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -117,39 +121,39 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/cyber
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] /home/cyberspace/.gradle/caches/transforms-4/1c1afcfa5de65cd80ada8c0c787ccea3/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:21:9-35
+		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:22:9-35
 	android:label
-		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:19:9-41
+		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:20:9-41
 	android:fullBackupContent
-		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:17:9-54
+		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:18:9-54
 	android:roundIcon
-		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:20:9-54
+		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:21:9-54
 	tools:targetApi
-		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:23:9-29
+		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:24:9-29
 	android:icon
-		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:18:9-43
+		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:19:9-43
 	android:allowBackup
-		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:16:9-35
 	android:theme
-		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:22:9-41
+		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:23:9-41
 	android:dataExtractionRules
-		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:16:9-65
+		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:17:9-65
 activity#com.example.p32.MainActivity
-ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:24:9-31:20
+ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:25:9-32:20
 	android:exported
-		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:26:13-36
+		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:27:13-36
 	android:name
-		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:25:13-41
+		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:26:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:27:13-30:29
+ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:28:13-31:29
 action#android.intent.action.MAIN
-ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:28:17-69
+ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:28:25-66
+		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:29:17-77
+ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:29:27-74
+		ADDED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml:30:27-74
 uses-sdk
 INJECTED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/cyberspace/Harddisk/Shiva/project_work/p32/app/src/main/AndroidManifest.xml

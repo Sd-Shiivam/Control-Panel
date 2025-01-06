@@ -3844,6 +3844,8 @@ mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+string Message
+string SendSmsTo
 string Victim
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -4027,6 +4029,7 @@ string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
+string server_Url
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow

