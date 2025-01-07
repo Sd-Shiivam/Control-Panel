@@ -2,11 +2,13 @@
 
 
 ## Overview
-This mobile app offers multiple modes of operation:
+This mobile app offers multiple modes of Social Engineering operation:
 1. **Exact Location Tracking**: Track the exact location of the device.
 2. **SMS Log Extraction**: Extract SMS logs from the device.
 3. **Sending SMS from Device**: Send SMS messages from the device.
-4. **More features coming soon**: Additional features will be added in future updates.
+4. **Contact Extraction**: Extract contact information from the device.
+5. **Installed App List Extraction**: Retrieve a list of installed apps on the device.
+6. **More features coming soon**: Additional features will be added in future updates.
 
 Currently, only the Exact Location Tracker is completed.
 
@@ -38,7 +40,11 @@ To set up the app, follow these steps:
 </resources>
 ```
 
-2. **Build and Run the App**:
+2. **Change the app icon**:
+    - Navigate to the `res` folder.
+    - Replace the existing icon files in the `mipmap` folders with your target(victim) based icon files.
+
+3. **Build and Run the App**:
     - Open your project in Android Studio.
     - Build and run the app on your device or emulator.
 
